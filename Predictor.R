@@ -10,7 +10,7 @@ library(tseries)
 library(nnfor)
 
 
-setwd(file.path(getwd(), "Dane"))
+setwd(file.path(getwd(), "Data"))
 
 file_list <- list.files(path=getwd())
 file_list <- rev(file_list)
@@ -129,4 +129,5 @@ print(accurate_pred)
 
 
 colnames(accuracy_df) <- c("ME", "RMSE", "MAE", "MPE", "MAPE")
+
 summary(accuracy_df)
